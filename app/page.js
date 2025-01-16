@@ -27,14 +27,14 @@ export default function Home() {
 
   return (
     <div className="flex flex-col text-white items-center justify-center w-full h-[50vh] bg-black p-8">
-      <h1 className="text-2xl lg:text-4xl font-bold mb-4">Twitter Handle to Tweets</h1>
-      <div className="flex gap-2 mb-4">
+      <h1 className="text-2xl lg:text-4xl font-bold mb-6">Twitter Handle to Tweets</h1>
+      <div className="flex flex-col lg:flex-row gap-2 mb-4">
         <input
           type="text"
           placeholder="Enter Twitter Handle"
           value={twitterHandle}
           onChange={(e) => setTwitterHandle(e.target.value)}
-          className="border rounded p-2"
+          className="border w-[50vh] h-[8vh] lg:text-start text-center bg-gray-800 rounded-xl px-3 py-0"
         />
         <button
           onClick={fetchTweets}
